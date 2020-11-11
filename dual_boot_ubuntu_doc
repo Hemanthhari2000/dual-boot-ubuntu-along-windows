@@ -1,0 +1,82 @@
+# DUAL BOOT UBUNTU ALONG SIDE WITH WINDOWS
+==========================================
+
+* Contents * 	
+
+1. Downloading Ubuntu iso image
+2. Downloading Rufus
+3. Setting up a bootable pendrive
+4. Burn iso image to pendrive
+5. Allocating space for Ubuntu
+6. Installing Ubuntu
+7. Conclusion
+
+1. Downloading Ubuntu iso image
+===============================
+
+-> The very first step to set up ubuntu is to download the latest ubuntu iso image from the official ubuntu website. ( https://ubuntu.com/ ).
+-> Open the link and download the latest iso image ( in this case I used Ubuntu 20.04 )
+-> Let the installation of the iso image take place.
+
+2. Downloading Rufus
+====================
+
+-> Next to burn the iso image into a bootable pendrive we use a free software called Rufus.
+-> Go ahead and install the free software from this link  https://rufus.ie/
+
+3. Setting up a bootable pendrive
+=================================
+
+-> Go ahead and connect the bootable pendrive.
+-> Now format the pendrive so that there are no files or programs that can cause errors while installing ubuntu.
+
+4. Burn iso image to pendrive
+=============================
+
+-> Burn the iso image into the pendrive using the free software rufus.
+-> Open the rufus and select the pendrive that you are going to burn ubuntu iso image.
+-> Select the default values and then click "START".
+-> This process takes a while to compelete and it depends on the drive writing speed.
+-> Close the application once the burning of the image is done.
+
+5. Allocating space for UBUNTU
+==============================
+
+-> This step is important step because we are creating a partition in our main drive to install ubuntu.
+-> open the disk management by going to start and typing "disk management", select the first option in the start menu to open the disk management window.
+-> Now, select the main disk that is the "Disk 0" and then make a partition in the "C: Drive".
+-> Now right click the "C:" Drive  and select "shrink volume".
+-> After that allocate space >= 30GB where for ubuntu 30GB is minimum.
+-> now select "Okay" and wait for the partition to finish.
+-> After the partition is done you can see that in the same drive we have "unallocated space" with your specified storage(space).
+-> Exit the window.
+
+6. Installing UBUNTU
+====================
+
+-> Go Ahead and restart the computer and let your machine detect the installation media or bootable pendrive automatically.
+	---> NOTE: 
+			SOMETIMES THE COMPUTER MAY NOT AUTOMATICALLY RECOGNIZE THE INSTALLTAION MEDIA (BOOTABLE PENDRIVE). 
+			IN THIS CASE TRY TO GO TO THE "UPDATES AND SECURITY" OPTION IN THE "SETTINGS" OF WINDOWS.
+			NOW UNDER "RECOVERY" TAB WE HAVE BOOT VIA A BOOTABLE DRIVE , SELECT "RESTART NOW" AND WAIT 
+			SELECT THE "INSTALLATION VIA USB MODE AND SELECT THE BOOTABLE DRIVE"
+			NOW YOUR COMPUTER IS BOOTING VIA A BOOTABLE MEDIA THAT IS YOUR PENDRIVE WHERE YOU HAVE YOUR UBUNTU ISO IMAGE.
+-> After you enter the installation window of UBUNTU select "install ubuntu".
+-> Now select all the default language settings and select "download  third party software options" and then give your config password.
+-> Here you have to select the option "something else" option to install ubuntu as per your customization.
+-> now locate that free space that you allocated in the windows via the disk management.
+-> double click the free space option and allocate some space ( for example: if you have allocated 50Gb then use 45Gb as a root partition. )
+-> Now select "Logical" under partition section.
+-> Now select a mount point for example "\". ( You can use \home too.)
+-> again, select the remaining space and save it as a "swap space" and keep the partition as "logical"
+-> finally, select the main root partition for the ubuntu. 
+-> Click on the continue and set your name and other stuffs.
+-> sit back and wait for the installation to get over.  
+-> After the installation is complete restart the system and you will be redirected to the grub where you can select either "ubuntu" or "windows boot manager" and toggle between two operating systems. 
+
+7. Conclusion
+=============
+
+We have seen how to set a dual boot for ubuntu alongside with windows.
+we have dealt with disk storage allocation, burning of the ubuntu iso image into a pendrive and finally setting up the big boy UBUNTU.
+Now we can use both Ubuntu and windows in a single system or computer.   
